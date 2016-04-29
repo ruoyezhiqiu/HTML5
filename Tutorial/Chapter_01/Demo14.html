@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo14</title>
+</head>
+<body>
+<form action="#">
+    <fieldset>
+        <legend>注册信息：</legend>
+
+        <label for="username">姓名：</label>
+        <input type="text" id="username">
+        <br>
+
+        <label>性别：</label>
+        <input type="radio" id="male" name="sex"><label for="male">男</label>
+        <input type="radio" id="female" name="sex"><label for="female">女</label><br>
+        <label for="age">年龄：</label>
+        <input type="text" id="age"><br>
+
+        <label for="date">出生日期：</label>
+        <input type="date" id="date" style="width: 175px;">
+        <br>
+        <label for="major">专业：</label>
+        <input type="text" id="major"><br>
+
+        <label for="city">所在城市：</label>
+        <input type="text" id="city" list="city_detail" placeholder="--请选择城市--">
+        <datalist id="city_detail">
+            <option id="chengdu">成都</option>
+            <option id="beijing">北京</option>
+            <option id="shanghai">上海</option>
+            <option id="guangzhou">广州</option>
+        </datalist>
+        <br>
+        <label for="home">家乡：</label>
+        <select name="home" id="home">
+            <optgroup label="四川">
+                <option value="bazhong">巴中</option>
+                <option value="chengdu">成都</option>
+            </optgroup>
+            <optgroup label="天津">
+                <option value="jixian">蓟县</option>
+                <option value="baodi">宝坻</option>
+            </optgroup>
+        </select>
+        <br>
+        <label for="jiguan">籍贯：</label>
+        <select name="jiguan" id="jiguan">
+            <option value="sichuan">四川</option>
+            <option value="beijing">北京</option>
+            <option value="guangzhou">广州</option>
+            <option value="shanghai">上海</option>
+        </select>
+
+        <hr>
+        <label for="text_area">请做自我介绍：</label>
+        <br>
+    <textarea rows="10" cols="30" id="text_area">
+    </textarea>
+        <iframe src="Demo11.html" frameborder="0" width="500" height="300"></iframe>
+        <iframe src="Demo05.html" frameborder="0" name="baidu" width="450" height="300"></iframe>
+        <a href="http://www.baidu.com" target="baidu">百度一下</a>
+        <hr>
+        <p style="background-color: #ffff00">通过十六进制设置背景色。</p>
+        <p style="background-color: rgb(255,255,0)">通过rgb设置背景色。</p>
+        <p style="background-color: purple">通过颜色英文名设置背景色。</p>
+        <input type="button" id="submit" value="提交">
+        <input type="reset" value="重置">
+    </fieldset>
+</form>
+</body>
+</html>

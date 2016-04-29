@@ -1,0 +1,9 @@
+body{
+    background-color: yellow;
+}
+p{
+    color: red;
+    font-size: 20%;
+    font-family: "Arial Black";
+    text-align: center;
+}
