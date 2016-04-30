@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo09</title>
+</head>
+<body>
+<form action="#" id="form01">
+    <label for="color">喜欢的颜色：</label>
+    <input type="color" id="color"><br>
+    <label for="date">生日：</label>
+    <input type="date" id="date"><br>
+    <label for="datetime">datetime:</label>
+    <input type="datetime-local" id="datetime"><br>
+    <label for="email">email:</label>
+    <input type="email" id="email"><br>
+    <label for="url">URL:</label>
+    <input type="url" id="url"><br>
+    <label for="month">月份：</label>
+    <input type="month" id="month"><br>
+    <label for="math">数学成绩：</label>
+    <input type="number" id="math" min="0" max="150"><br>
+    <label for="week">入学周：</label>
+    <input type="week" id="week"><br>
+    <label for="username">用户名：</label>
+    <input type="text" id="username" autofocus>
+    <label for="pwd">密码：</label>
+    <keygen name="security" id="pwd" keytype="rsa"><br>
+
+        points: <input type="range" name="points" min="1" max="10">
+</form>
+<br>
+<label for="url01">URL:</label>
+<input type="url" form="form01" id="url01"><br>
+<label for="files">选择上传的文件：</label>
+<input type="file" id="files" multiple><br>
+
+
+<label for="city">所在城市：</label>
+<input type="text" id="city" placeholder="请选择城市：" list="city_list">
+<datalist id="city_list">
+    <option id="sichuan">四川</option>
+    <option id="beijing">北京</option>
+    <option id="guangzhou">广州</option>
+    <option id="shanghai">上海</option>
+</datalist>
+<br>
+<label for="home_address">家乡：</label>
+<select name="home" id="home_address">
+    <option value="1">巴中</option>
+    <option value="2">海淀</option>
+    <option value="3">珠海</option>
+    <option value="4">海南</option>
+</select>
+<br><input type="submit" value="提交" formaction="http://www.baidu.com">
+</body>
+</html>

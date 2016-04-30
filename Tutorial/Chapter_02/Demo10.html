@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo10</title>
+    <style>
+        .div1:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #div1{
+
+            /*overflow: hidden;*/
+            border: 2px solid purple;
+        }
+        #div2{
+            border: 2px solid blue;
+            float: left;
+            height: 200px;
+            width: 500px;
+        }
+        #div3{
+            border: 2px solid red;
+            float: left;
+            height: 200px;
+            width:500px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="div1" class="div1">
+    <div id="div2"></div>
+    <div id="div3"></div>
+
+</div>
+</body>
+</html>

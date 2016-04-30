@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo05</title>
+</head>
+<body>
+<embed src="../../swf/flash4466.swf" type="">
+<canvas id="myCanvas" width="200" height="100" style="border: 1px solid blue;"></canvas>
+    <script>
+        var c =document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.fillStyle="#ff0000";
+        ctx.fillRect(0,0,150,75);
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.stroke();
+
+    </script>
+    <canvas id="mycanas_new" width="200" height="100" style="border: 1px solid blue;"></canvas>
+    <script>
+    var c =document.getElementById("mycanas_new");
+    var ctx = c.getContext("2d");
+    var grd=ctx.createLinearGradient(0,0,200,0);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"white");
+    ctx.fillStyle=grd;
+    ctx.fillRect(10,10,150,80);
+    </script>
+    <canvas id="canvas_01" width="200" height="100" style="border: 5px solid purple"></canvas>
+    <script>
+        var c=document.getElementById("canvas_01");
+        var ctx=c.getContext("2d");
+        var grd=ctx.createRadialGradient(75,50,5,90,60,100);
+        grd.addColorStop(0,"red");
+        grd.addColorStop(1,"white");
+        ctx.fillStyle=grd;
+        ctx.fillRect(10,10,150,80);
+    </script>
+    <canvas id="words" width="200" height="100" style="border: 1px solid red"></canvas>
+    <script>
+        var c=document.getElementById("words");
+        var ctx= c.getContext("2d");
+        ctx.font="30px Arial";
+        ctx.strokeText("Hello World ",10,50);
+    </script>
+    <hr>
+    <img id="tupian" src="../../images/d.png" alt="图片无法显示" style="width: 200px;height: 100px">
+    <canvas id="image" width="300" height="200" style="border: 2px solid green"></canvas>
+    <script>
+        var c=document.getElementById("image");
+        var ctx= c.getContext("2d");
+        var img=document.getElementById("tupian");
+        img.onload=function(){
+            ctx.drawImage(img,0,0);
+        }
+    </script>
+    <svg xmlns="http://www.baidu.com/2000/svg" version="1.1" height="190">
+        <polygon points="100,10,40,180,190,60,10,60,160,180"
+        style="fill: lime;stroke:purple;stroke-width: 5;fill-rule:evenodd;"
+        >
+    </svg>
+</body>
+</html>
