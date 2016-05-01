@@ -3,22 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>Demo11</title>
+    <style>
+        nav{
+            color: red;
+        }
+    </style>
 </head>
 <body>
-<!--novalidate 属性不验证表单直接提交-->
-<form action="#" novalidate>
-<label for="username">用户名：</label>
-    <!--autocomplete 属性当代码提交过后 刷新页面后实现自动填充保留记录-->
- <input type="text" name="username" id="username" autocomplete="on">
-<br>
-<label for="pwd">密码：</label>
-<input type="password" id="pwd">
-<keygen name="security" id="pwd01" keytype="rsa"><br>
-    <label for="email">Email：</label>
-    <input type="email" id="email"><br>
+<!--导航栏-->
+<nav>
+    <a href="#">HTML</a> |
+    <a href="#">CSS</a> |
+    <a href="#">JS</a> |
+    <a href="#">jQuery</a>
 
-    <input type="submit" value="提交">
+</nav>
+<br>
+<!--novalidate 属性不验证表单直接提交-->
+<form action="#" id="form01" method="get">
+    <label for="username">用户名：</label>
+    <!--autocomplete 属性当代码提交过后 刷新页面后实现自动填充保留记录-->
+    <input type="text" name="username" id="username" autocomplete="on" autofocus>
+    <br>
+    <label for="pwd">密码：</label>
+    <input type="password" id="pwd">
+    <keygen name="security" id="pwd01" keytype="rsa"><br>
+        <label for="age">年龄：</label>
+        <input type="number" id="age" min="1" max="150"><br>
+        <label for="email">Email：</label>
+        <input type="email" id="email"><br>
+        <label for="qq">QQ:</label>
+        <input type="number" id="qq"><br>
+        <input type="image" src="../../images/e.png" alt="Submit" width="80" height="50">
+        <br>
+        <label for="city">所在城市：</label>
+        <input type="text" list="city" placeholder="--请选择城市--">
+        <datalist id="city">
+            <option id="o1">北京</option>
+            <option id="o2">四川</option>
+            <option id="03">上海</option>
+            <option id="o4">广州</option>
+        </datalist>
+        <br>
+        <label for="home">家乡：</label>
+        <select name="home" id="home">
+            <option id="h1">巴中</option>
+            <option id="h2">成都</option>
+            <option id="h3">绵阳</option>
+            <option id="h4">德阳</option>
+        </select>
+        <br><input type="submit" value="提交" formnovalidate>
 
 </form>
+<br>
+<label for="address">住址：</label>
+<input type="text" id="address" form="form01"><br>
+<label for="url">url:</label>
+<input type="url" id="url" form="form01">
+<br>
+<label for="education">学历：</label>
+<input type="text" id="education" form="form01" required="required">
 </body>
 </html>
