@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo15</title>
+</head>
+<body>
+<p>
+    如果你的变量没有声明，它将自动成为全局变量：
+</p>
+<p id="demo"></p>
+<script>
+    myFunction();
+    document.getElementById("demo").innerHTML="I can display "+carName;
+    function myFunction(){
+        carName="Volvo";
+    }
+</script>
+</body>
+</html>

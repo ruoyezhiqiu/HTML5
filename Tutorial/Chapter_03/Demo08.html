@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo08</title>
+    <style>
+        <!--链接的正常状态，还未被点击的时候的状态-->
+        a:link{
+            color:#ff0000;
+        }
+        /*链接已经被用户访问过了*/
+        a:visited{
+            color:#00ff00;
+        }
+        /*鼠标放在链接上的效果*/
+        a:hover{
+            color: #ff00ff;
+        }
+        /*链接被点击的那一刻*/
+        a:active{
+            color:#0000ff;
+        }
+    </style>
+</head>
+<body>
+<p><b><a href="http://www.baidu.com" target="_blank">这是一个链接</a></b></p>
+<p><b>注意：</b> a:hover必须在a:link 和a：visited之后，需要按照严格顺序才能看到效果。</p>
+
+</body>
+</html>

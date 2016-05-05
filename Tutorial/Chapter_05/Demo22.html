@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo22</title>
+</head>
+<body>
+<input type="text" id="demo" value="30">
+<p id="demo02"></p><br>
+<button onclick="myFunction()">点我试试</button>
+<script>
+    function myFunction(){
+        var x;
+        var y=document.getElementById("demo").value;
+        x=(y<20)?"Good day !":"see you !";
+        document.getElementById("demo02").innerHTML=x;
+    }
+</script>
+</body>
+</html>

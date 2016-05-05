@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo16</title>
+</head>
+<body>
+<h1 onmouseover="this.innerHTML=Date()" onmouseout="this.innerHTML='这里是标题'">这里是标题</h1>
+<p id="demo"></p>
+<button onclick="getElementById('demo').innerHTML=Date()">The time is</button>
+<button onclick="this.innerHTML=Date()">This time is ?</button>
+<button onclick="displayDate()">点击这里</button>
+<script>
+    function displayDate() {
+        document.getElementById("demo02").innerHTML = Date();
+    }
+</script>
+<p id="demo02"></p>
+</body>
+</html>

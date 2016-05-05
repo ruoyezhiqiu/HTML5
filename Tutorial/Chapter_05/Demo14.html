@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo14</title>
+</head>
+<body>
+<h1>带返回值的javascript函数的定义与调用</h1>
+<p id="demo"></p>
+<p id="demo02"></p>
+<script>
+    var x=10;
+    function myFunction(a,b){
+        return a*b;
+    }
+    document.getElementById("demo").innerHTML=myFunction(3,5);
+</script>
+<script>
+ document.getElementById("demo02").innerHTML=window.x;
+</script>
+</body>
+</html>

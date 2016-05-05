@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo25</title>
+</head>
+<body>
+<p>今天会是周末吗？</p>
+<p id="demo"></p>
+<button onclick="myFunction()">点我看答案</button>
+<script>
+    function myFunction(){
+        var x;
+        var day=new Date().getDay();
+        switch (day){
+            case 6:
+                x="Today is Saturday !";
+                break;
+            case 0:
+                x="Today is Sunday !";
+                break;
+            default:
+                x="Looking forward to the Weeked !";
+        }
+        document.getElementById("demo").innerHTML=x;
+    }
+</script>
+</body>
+</html>
