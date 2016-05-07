@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo29</title>
+</head>
+<body>
+<p>点击按钮测试带有continue的语句。</p>
+<button onclick="myFunction()">点我</button>
+<p id="demo"></p>
+<script>
+    function myFunction(){
+        var i=0;
+        var x="";
+        for(i=0;i<11;i++){
+            if(i==3){
+                continue;
+            }
+            x=x+"This number is "+i+"<br>";
+        }
+        document.getElementById("demo").innerHTML=x;
+    }
+</script>
+</body>
+</html>
