@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo40</title>
+</head>
+<body>
+<h2>Create Object for JSON String</h2>
+<p>Fist Name:<span id="demo"></span></p>
+<script>
+    var employees=[
+        {"firstName":"Tom","age":35},
+        {"firstName":"John","age":40}
+    ];
+    employees[1].firstname="Johntan";
+    document.getElementById("demo").innerHTML=employees[1].firstname;
+</script>
+</body>
+</html>

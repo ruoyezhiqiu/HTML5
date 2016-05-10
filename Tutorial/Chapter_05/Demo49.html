@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo49</title>
+</head>
+<body>
+<p>点击计数：</p>
+<p id="demo"></p>
+<script>
+    function add() {
+        var count=0;
+        return count+=1;
+    }
+    function myFunction() {
+        document.getElementById("demo").innerHTML=add();
+    }
+</script>
+<button onclick="myFunction()">点我计数</button>
+</body>
+</html>

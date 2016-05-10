@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo47</title>
+</head>
+<body>
+<p>计算一组数的和：</p>
+<p id="demo"></p>
+<script>
+    var i=0,sum=0;
+    function sumAll() {
+        for (i;i<arguments.length;i++){
+         sum+=arguments[i];
+        }
+        return sum;
+    }
+    document.getElementById("demo").innerHTML=sumAll(1,2,3,4,5,6,7,8,9,10);
+</script>
+</body>
+</html>

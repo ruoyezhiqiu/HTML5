@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo41</title>
+</head>
+<body>
+<h2>从JSON字符串中创建javascript对象</h2>
+<p>
+    <label for="fname">名：</label>
+    <span id="fname"></span><br>
+    <label for="lname">姓：</label>
+    <span id="lname"></span>
+</p>
+<script>
+    var txt='{"employees":['+
+            '{"firstName":"John","lastName":"Doe"},'+
+            '{"firstName":"Anna","lastName":"Smith"},'+
+            '{"firstName":"Peter","lastName":"Jones"}]}';
+    var obj=eval("("+txt+")");
+    document.getElementById("fname").innerHTML=obj.employees[1].firstName;
+    document.getElementById("lname").innerHTML=obj.employees[1].lastName;
+</script>
+</body>
+</html>

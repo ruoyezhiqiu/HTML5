@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo50</title>
+</head>
+<body>
+<p>全局变量，实现计数器功能</p>
+<p id="demo"></p>
+<button onclick="myFunction()">点我计数</button>
+<script>
+    var count=0;
+    function add() {
+        return count+=1;
+    }
+    function myFunction() {
+        document.getElementById("demo").innerHTML=add();
+    }
+</script>
+</body>
+</html>

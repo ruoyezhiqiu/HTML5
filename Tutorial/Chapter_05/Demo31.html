@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo31</title>
+</head>
+<body>
+<p>判断一个变量是否为数组类型。</p>
+<p id="demo"></p>
+<p id="demo02"></p>
+<script>
+    var fruits=["Banana","Orange","Apple","Mango"];
+    var car="BMW";
+    var num=72;
+    var arr=["12,15,18"];
+    document.getElementById("demo").innerHTML=isArrays(fruits);
+    document.getElementById("demo02").innerHTML=car.constructor+"<br>"+
+            num.constructor+"<br>"+arr.constructor;
+    function isArrays(myArray){
+        return myArray.constructor.toString().indexOf("Array")>-1;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo48</title>
+</head>
+<body>
+<p>在对象中定义方法，然后用对象调用该方法</p>
+<p id="demo"></p>
+<script>
+    var person={
+        name:"john",
+        age:25,
+        getMax:function () {
+            var i,max=0;
+            for (i=0;i<arguments.length;i++){
+                if (arguments[i]>max){
+                    max=arguments[i];
+                }
+            }
+            return max;
+        }
+    }
+    document.getElementById("demo").innerHTML=person.getMax(12,24,36,48,72,10,9,8,7,6,5,4,3);
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo45</title>
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo03"></p>
+<script>
+    var x=function (a, b) {
+        return a*b;
+    };
+    document.getElementById("demo03").innerHTML=x(4,5);
+    document.getElementById("demo").innerHTML=x;
+    document.getElementById("demo02").innerHTML=x; /*本行将不会执行，因为找不到demo02*/
+</script>
+<p id="demo02"></p>
+</body>
+</html>

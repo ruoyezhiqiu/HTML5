@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo33</title>
+</head>
+<body>
+<p>正则表达式的运用。</p>
+<p id="demo"></p>
+<p id="demo02"></p>
+<p id="demo03"></p>
+<p id="demo04"></p>
+<script>
+    var str="Visit W3Cschool";
+    var n=str.search(/w3cschool/i);
+//    var res = str.replace("W3Cschool","nice");
+    var res=str.replace(/w3cschool/i,"good");
+    document.getElementById("demo").innerHTML= n.toString();
+    document.getElementById("demo02").innerHTML=res;
+    document.getElementById("demo03").innerHTML=res;
+    document.getElementById("demo04").innerHTML=res;
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo38</title>
+</head>
+<body>
+<script>
+    function validateForm() {
+        var x = document.forms["myForm"]["username"].value;
+        if (x == null || x == "") {
+            alert("姓名必须填写!");
+            return false;
+        }
+    }
+</script>
+<form action="#" name="myForm" onsubmit="return validateForm()" method="post">
+    <label for="username">姓名：</label>
+    <input type="text" id="username"><br>
+    <label for="password">密码：</label>
+    <input type="text" id="password"><br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
