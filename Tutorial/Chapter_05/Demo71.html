@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo71</title>
+</head>
+<body>
+<h1>实例演示了使用addeventlistener()方法如何传递参数：</h1>
+<p>点击按钮计算结果：</p>
+<button id="demo02">点我计算结果</button>
+<p id="demo"></p>
+<script>
+    var p1 = 10;
+    var p2 = 20;
+    document.getElementById("demo02").addEventListener('click', function () {
+        myFunction(p1, p2);
+    });
+    function myFunction(a, b) {
+//        var result = a * b;
+        document.getElementById("demo").innerHTML = a * b;
+    }
+</script>
+</body>
+</html>

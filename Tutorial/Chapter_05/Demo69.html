@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo69</title>
+</head>
+<body>
+<p>你可以用addEventListener()事件监听器为一个元素添加多个事件，如下给一个button添加三个事件：</p>
+<button id="demo" style="color: purple">点我</button>
+<p id="demo02"></p>
+<script>
+    var x = document.getElementById("demo");
+    var y = document.getElementById("demo02");
+    x.addEventListener('click', function () {
+        y.innerHTML += "<p style='color: green'>" + "<b>" + "it`s clicked !" + "<br>" + "</b>" + "</p>";
+    });
+    x.addEventListener('mouseover', function () {
+        y.innerHTML += "<p style='color: #f44336'>" + "<b>" + "it`s over itself !" + "<br>" + "</b>" + "</p>";
+    });
+    x.addEventListener('mouseout', function () {
+        y.innerHTML += "<p style='color: blue'>" + "<b>" + "it`s leaving !" + "<br>" + "</b>" + "</p>";
+    });
+    x.addEventListener('mousedown', function () {
+        y.innerHTML += "<p style='color: black;background-color: red'>" + "<b>" + "it`s mouse_down !" + "</b>" + "</p>";
+    })
+</script>
+</body>
+</html>

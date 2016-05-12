@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo70</title>
+</head>
+<body>
+<h1>为window对象添加"resize"事件监听器：</h1>
+<p id="demo">0.2545746584879564</p>
+<script>
+    window.addEventListener('resize',function () {
+        document.getElementById("demo").innerHTML=Math.random();
+    })
+</script>
+</body>
+</html>

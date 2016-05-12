@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo64</title>
+</head>
+<body>
+<p>将鼠标放到下边的框中看看是个什么效果</p>
+<div onmouseover="overMouse(this)" onmouseout="outMouse(this)"
+     style="color:black;background-color: red ;width: 180px;height: 20px;padding: 40px;">mouse over me !
+</div>
+<script>
+    function overMouse(obj) {
+        obj.style.backgroundColor="green";
+        obj.innerHTML = "thank you !";
+    }
+    function outMouse(obj) {
+        obj.style.backgroundColor="red";
+        obj.innerHTML = "mouse over me!";
+    }
+</script>
+</body>
+</html>

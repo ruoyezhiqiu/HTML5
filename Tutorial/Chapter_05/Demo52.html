@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo52</title>
+</head>
+<body>
+<p>hello world !</p>
+<div id="demo">
+    <p>DOM是非常有用的</p>
+    <p>该实例展示了<b>getElementsByTagName方法。</b></p>
+</div>
+<script>
+    var x = document.getElementById("demo");
+    /*返回一个id="demo"的对象。*/
+    var y = x.getElementsByTagName("p");
+    /*返回x对象中的所有p元素的数组。*/
+    document.write("id='demo'元素中的第一个段落为：" + y[0].innerHTML);
+</script>
+</body>
+</html>

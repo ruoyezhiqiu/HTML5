@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo65</title>
+</head>
+<body>
+<div id="demo" onmousedown="down_Mouse()" onmouseup="up_Mouse()" style="background-color: green; width:120px;height: 20px;padding: 40px">downMouse me !</div>
+<script>
+    function down_Mouse() {
+        document.getElementById("demo").style.backgroundColor="red";
+        document.getElementById("demo").innerHTML="very nice !";
+    }
+    function up_Mouse() {
+        document.getElementById("demo").style.backgroundColor="green";
+        document.getElementById("demo").innerHTML="downMouse me !";
+    }
+</script>
+
+</body>
+</html>

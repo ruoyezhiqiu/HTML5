@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo62</title>
+</head>
+<body>
+<p>点击按钮执行displayDate()函数</p>
+<button id="myBtn">点击这里</button>
+<script>
+    document.getElementById("myBtn").onclick=function(){displayDate()};
+    function displayDate() {
+        document.getElementById("demo02").innerHTML=Date();
+    }
+</script>
+<p id="demo02"></p>
+</body>
+</html>

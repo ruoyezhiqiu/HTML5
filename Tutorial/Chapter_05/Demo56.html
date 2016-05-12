@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo56</title>
+</head>
+<body>
+<p id="demo01" style="color: #008CBA">此文字的颜色已经被改过了</p>
+<img id="demo02" src="../../images/a.jpg" alt="图片显示失败了！" title="">
+<script>
+    document.getElementById("demo01").style.color="red";
+//    document.getElementById("demo02").src="../../images/b.jpg";
+    document.getElementsByTagName("img")[0].src="../../images/f.jpg";
+    document.getElementById("demo02").title="此图片已经被更改!";
+</script>
+</body>
+</html>

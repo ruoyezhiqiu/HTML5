@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo68</title>
+</head>
+<body>
+<label>用户名：</label>
+<input type="text" id="god" title="god">
+<p id="username">请将鼠标移动到这段话上看下有啥情况！</p>
+<script>
+    document.getElementById("username").addEventListener("mouseover",function () {
+        this.style.backgroundColor="#0f0";
+    });
+    document.getElementById("username").addEventListener("mouseout",function () {
+        this.style.backgroundColor="white";
+    });
+    document.getElementById("god").addEventListener('focus',function () {
+        this.style.backgroundColor="#B4EEB4";
+    });
+    document.getElementById("god").addEventListener('blur',function () {
+        this.style.backgroundColor="white";
+    })
+</script>
+</body>
+</html>

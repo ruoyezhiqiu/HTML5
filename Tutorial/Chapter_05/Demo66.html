@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo66</title>
+</head>
+<body>
+<!--获得焦点与失去焦点-->
+<label for="username">用户名：</label>
+<input type="text" id="username" onfocus="on_Focus(this)" onblur="lost_Focus(this)"><br>
+<label for="password">密码：</label>
+<input type="password" id="password" onfocus="on_Focus(this)" onblur="lost_Focus(this)">
+<script>
+    function on_Focus(obj) {
+        obj.style.backgroundColor = "#E5E5E5";
+    }
+    function lost_Focus(obj) {
+        obj.style.backgroundColor = "white";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo63</title>
+</head>
+<body>
+<label for="username">用户名：</label>
+<input type="text" onchange="myFunction()" id="username">
+<p>当鼠标离开了输入框之后，文本框中所有的字母都会大写。</p>
+<script>
+    function myFunction() {
+        var x = document.getElementById("username");
+        x.value = x.value.toUpperCase();
+    }
+</script>
+</body>
+</html>
