@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo72</title>
+    <style>
+        #div1 {
+            border: 2px double purple;
+            width: 360px;
+            height: 100px;
+        }
+
+        #div2 {
+            border: 2px double purple;
+            width: 360px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<h1>事件监听器的触发顺序：冒泡与捕获</h1>
+<div id="div1">
+    <p id="p1">点击我试试看，谁的click先被执行！</p>
+</div>
+<hr>
+<div id="div2">
+    <p id="p2">点击我试试看，谁的click先被执行！</p>
+</div>
+<script>
+    document.getElementById("div1").addEventListener('click', function () {
+//        this.style.backgroundColor = "blue";
+        document.getElementById("div1").style.backgroundColor="purple";
+        alert("你点击了div");
+    });
+    document.getElementById("p1").addEventListener('click', function () {
+//        this.style.backgroundcolr = "green";
+        document.getElementById("p1").style.color="blue";
+        alert("你点了P元素");
+    });
+    document.getElementById("div2").addEventListener('click',function () {
+        document.getElementById("div2").style.backgroundColor="#83C75D";
+        alert("你点击了div");
+    },true);
+    document.getElementById("p2").addEventListener('click',function () {
+        document.getElementById("p2").style.color="#780062";
+        alert("你点击了p元素");
+    },true)
+</script>
+</body>
+</html>

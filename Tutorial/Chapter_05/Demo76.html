@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo76</title>
+</head>
+<body>
+<h1>无穷大的体现过程</h1>
+<p style="color: red">其中的infinity是无穷大的意思</p>
+<script>
+    var myNumber=2;
+    while(myNumber!=Infinity){
+        myNumber=myNumber*myNumber;
+        document.write(myNumber+"</br>")
+    }
+</script>
+<p style="color: purple">一个数除以0也会产生无穷大</p>
+<p id="demo" style="color: #008CBA"></p>
+<p id="demo02"></p>
+<script>
+    document.getElementById("demo").innerHTML=2/0;
+    document.getElementById("demo02").innerHTML=isNaN(3.14);
+    document.write(typeof(Infinity)+"<br>");
+    var x=123;
+    var y =new Object(123);
+    document.write(typeof(x)+"<br>");
+    document.write(typeof(y)+"<br>");
+    var name="hello world";
+    document.write(name[7]+"<br>");
+    document.write(name.length+"<br>");
+    document.write(name.indexOf("ll")+"<br>");
+    document.write(name.match("hello")+"<br>");
+    document.write(name.match("Hello"));
+
+</script>
+<h1>以下是红绿蓝三原色用rgb格式表示的方式</h1>
+<p style="color: rgb(255,0,0)">这些文字是红色吗？</p>
+<p style="color:rgb(0,255,0);">这些文字是绿色吗？</p>
+<p style="color: rgb(0,0,255)">这些文字是蓝色吗？</p>
+<p style="color: rgb(0,0,0)">这些文字是纯黑色吗？</p>
+<p style="color: rgb(100%,100%,100%);background-color: black">这些文字是纯白色吗？</p>
+<!--一般情况下考虑到浏览器以及系统兼容性时，要使用中文字体，需通过escape函数将中文字体转换为UTF-8的格式，然后将其中的
+“%u”换成“\”就OK 了。即：使用Unicode编码-->
+<!--u5FAE%u8F6F%u96C5%u9ED1-->
+<p style="font-family: '\5FAE\8F6F\96C5\9ED1',serif;">这些文字是微软雅黑字体吗？</p>
+<p style="font-family: '宋体',serif;">这些文字是宋体字体吗？</p>
+<p style="font-family: '\5b8b\4f53',cursive;">这些文字是宋体字体吗？</p>
+<p style="font-family: '\5b8b\4f53',sans-serif;">这些文字是宋体字体吗？</p>
+</body>
+</html>

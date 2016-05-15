@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo74</title>
+</head>
+<body>
+<h1>使用构造函数定义对象</h1>
+<button id="btn">点我试试看</button>
+<p id="demo"></p>
+<p id="demo02"></p>
+<script>
+    function person(firstName, lastName, age, major, eyeColor) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.major = major;
+        this.eyeColor = eyeColor;
+    }
+    var yourFather = new person("john", "Doe", 50, "doctor", "blue");
+    document.getElementById("demo").innerHTML = yourFather.age + "岁的" + yourFather.firstName + "的工作是：" + yourFather.major;
+    /*此处实现对象属性的完全遍历*/
+    document.getElementById("btn").addEventListener('click', function () {
+        var x;
+        var txt = "";
+        for (x in yourFather) {
+            txt = txt + yourFather[x] + " ";
+        }
+        document.getElementById("demo02").innerHTML = txt;
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo75</title>
+</head>
+<body>
+<h1>javascript中的数字类型转换问题</h1>
+<p><b>将一个十进制分别转换为二进制、八进制、十六进制的方式如下：</b></p>
+<label for="number">请输入一个数字：</label><input type="number" id="number"><br><br>
+<button id="btn01">转二进制</button>
+<button id="btn02">转八进制</button>
+<button id="btn03">转十六进制</button>
+<br>
+<p id="demo"></p>
+<script>
+    document.getElementById("btn01").addEventListener('click', function () {
+        var x = document.getElementById("number").value;
+        var y = parseFloat(x);
+        document.getElementById("demo").innerHTML = y.toString(2);
+    });
+    document.getElementById("btn02").addEventListener('click', function () {
+        var x = document.getElementById("number").value;
+        var y = parseFloat(x);
+        document.getElementById("demo").innerHTML = y.toString(8);
+    });
+    document.getElementById("btn03").addEventListener('click', function () {
+        var x = document.getElementById("number").value;
+        var y = parseFloat(x);
+        document.getElementById("demo").innerHTML = y.toString(16);
+    })
+</script>
+</body>
+</html>
